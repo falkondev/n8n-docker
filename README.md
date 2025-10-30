@@ -22,4 +22,9 @@ Em seguida, execute `docker compose up -d` para baixar a imagem e criar o contai
 Para consultar os logs do n8n, execute `docker logs -f n8n`.
 
 ## Atualizando a versão do N8N
-Descrição em breve...
+Caso o N8N tenha novas atualizações e você queira atualizar seu container, execute os seguintes passos:
+```
+docker compose pull
+docker compose up -d
+```
+Os comandos acima irão forçar o docker a procurar novas atualizações para a imagem do N8N e em seguida irá montar o container novamente.
